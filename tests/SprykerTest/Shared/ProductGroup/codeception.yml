@@ -1,4 +1,4 @@
-namespace: SprykerTest\Shared\PriceProduct
+namespace: SprykerTest\Shared\ProductGroup
 actor: Tester
 paths:
     tests: .
