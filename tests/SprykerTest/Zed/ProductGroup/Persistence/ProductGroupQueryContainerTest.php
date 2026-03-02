@@ -28,9 +28,6 @@ class ProductGroupQueryContainerTest extends Unit
 {
     protected ProductGroupPersistenceTester $tester;
 
-    /**
-     * @return void
-     */
     public function testQueryAllProductAbstractGroupsReturnCorrectQuery(): void
     {
         $productGroupQueryContainer = new ProductGroupQueryContainer();
@@ -41,9 +38,6 @@ class ProductGroupQueryContainerTest extends Unit
         $this->assertInstanceOf(SpyProductAbstractGroupQuery::class, $query);
     }
 
-    /**
-     * @return void
-     */
     public function testQueryAllProductGroupsReturnCorrectQuery(): void
     {
         $productGroupQueryContainer = new ProductGroupQueryContainer();

@@ -24,10 +24,6 @@ class ProductGroupStorageReader implements ProductGroupStorageReaderInterface
      */
     protected $productGroupKeyBuilder;
 
-    /**
-     * @param \Spryker\Client\ProductGroup\Dependency\Client\ProductGroupToStorageInterface $storageClient
-     * @param \Spryker\Shared\KeyBuilder\KeyBuilderInterface $productGroupKeyBuilder
-     */
     public function __construct(ProductGroupToStorageInterface $storageClient, KeyBuilderInterface $productGroupKeyBuilder)
     {
         $this->storageClient = $storageClient;

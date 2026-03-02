@@ -41,11 +41,6 @@ class ProductGroupDependencyProvider extends AbstractBundleDependencyProvider
         return $container;
     }
 
-    /**
-     * @param \Spryker\Yves\Kernel\Container $container
-     *
-     * @return \Spryker\Yves\Kernel\Container
-     */
     protected function addLocale(Container $container): Container
     {
         $container->set(static::SERVICE_LOCALE, function (ContainerInterface $container) {

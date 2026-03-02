@@ -27,9 +27,6 @@ use Spryker\Shared\ProductGroup\ProductGroupConfig;
  */
 class DeleteProductGroupTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testDeleteProductGroupRemovesEntitiesFromDatabase(): void
     {
         // Arrange

@@ -26,10 +26,6 @@ class ProductGroupUpdater implements ProductGroupUpdaterInterface
      */
     protected $productGroupTouch;
 
-    /**
-     * @param \Spryker\Zed\ProductGroup\Business\Model\ProductGroupEntityReaderInterface $productGroupEntityReader
-     * @param \Spryker\Zed\ProductGroup\Business\Model\ProductGroupTouchInterface $productGroupTouch
-     */
     public function __construct(ProductGroupEntityReaderInterface $productGroupEntityReader, ProductGroupTouchInterface $productGroupTouch)
     {
         $this->productGroupTouch = $productGroupTouch;

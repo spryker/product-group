@@ -18,9 +18,6 @@ class ProductGroupEntityReader implements ProductGroupEntityReaderInterface
      */
     protected $productGroupQueryContainer;
 
-    /**
-     * @param \Spryker\Zed\ProductGroup\Persistence\ProductGroupQueryContainerInterface $productGroupQueryContainer
-     */
     public function __construct(ProductGroupQueryContainerInterface $productGroupQueryContainer)
     {
         $this->productGroupQueryContainer = $productGroupQueryContainer;

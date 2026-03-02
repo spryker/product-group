@@ -24,10 +24,6 @@ class ProductGroupTouch implements ProductGroupTouchInterface
      */
     protected $productGroupQueryContainer;
 
-    /**
-     * @param \Spryker\Zed\ProductGroup\Dependency\Facade\ProductGroupToTouchInterface $touchFacade
-     * @param \Spryker\Zed\ProductGroup\Persistence\ProductGroupQueryContainerInterface $productGroupQueryContainer
-     */
     public function __construct(ProductGroupToTouchInterface $touchFacade, ProductGroupQueryContainerInterface $productGroupQueryContainer)
     {
         $this->touchFacade = $touchFacade;

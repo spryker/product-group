@@ -29,10 +29,6 @@ class ProductGroupTwigExtension extends TwigExtension
      */
     protected $locale;
 
-    /**
-     * @param \Spryker\Client\ProductGroup\ProductGroupClientInterface $productGroupClient
-     * @param string $locale
-     */
     public function __construct(ProductGroupClientInterface $productGroupClient, string $locale)
     {
         $this->productGroupClient = $productGroupClient;

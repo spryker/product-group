@@ -26,9 +26,6 @@ use Generated\Shared\Transfer\ProductGroupTransfer;
  */
 class ReadProductGroupTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testReadProductGroupHasProductIdsInCorrectOrder(): void
     {
         // Arrange

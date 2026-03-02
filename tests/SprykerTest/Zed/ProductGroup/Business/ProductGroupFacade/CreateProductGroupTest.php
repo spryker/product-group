@@ -27,9 +27,6 @@ use Spryker\Shared\ProductGroup\ProductGroupConfig;
  */
 class CreateProductGroupTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testCreateProductGroupPersistNewEntitiesToDatabase(): void
     {
         // Arrange

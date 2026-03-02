@@ -27,9 +27,6 @@ use Spryker\Shared\ProductGroup\ProductGroupConfig;
  */
 class UpdateProductGroupTest extends Unit
 {
-    /**
-     * @return void
-     */
     public function testUpdateProductGroupPersistChangesToDatabase(): void
     {
         // Arrange
@@ -63,9 +60,6 @@ class UpdateProductGroupTest extends Unit
         $this->tester->assertTouchDeleted(ProductGroupConfig::RESOURCE_TYPE_PRODUCT_ABSTRACT_GROUPS, $productAbstractTransfer2->getIdProductAbstract(), 'Product #2 should have been touched as deleted.');
     }
 
-    /**
-     * @return void
-     */
     public function testAddProductsToGroupPersistsChangesToDatabase(): void
     {
         // Arrange
@@ -102,9 +96,6 @@ class UpdateProductGroupTest extends Unit
         $this->tester->assertTouchActive(ProductGroupConfig::RESOURCE_TYPE_PRODUCT_ABSTRACT_GROUPS, $productAbstractTransfer3->getIdProductAbstract(), 'Product #3 should have been touched as active.');
     }
 
-    /**
-     * @return void
-     */
     public function testRemoveProductsFromGroupPersistsChangesToDatabase(): void
     {
         // Arrange
@@ -143,9 +134,6 @@ class UpdateProductGroupTest extends Unit
         $this->tester->assertTouchDeleted(ProductGroupConfig::RESOURCE_TYPE_PRODUCT_ABSTRACT_GROUPS, $productAbstractTransfer4->getIdProductAbstract(), 'Product #3 should have been touched as deleted.');
     }
 
-    /**
-     * @return void
-     */
     public function testUpdateProductGroupTouchesProductAbstractGroupsAccordingToTheirState(): void
     {
         // Arrange
@@ -182,9 +170,6 @@ class UpdateProductGroupTest extends Unit
         $this->tester->assertTouchActive(ProductGroupConfig::RESOURCE_TYPE_PRODUCT_ABSTRACT_GROUPS, $productAbstractTransfer4->getIdProductAbstract(), 'Product #4 should have been touched as active.');
     }
 
-    /**
-     * @return void
-     */
     public function testRemoveProductsFromGroupTouchesProductAbstractGroupsAccordingToTheirState(): void
     {
         // Arrange
@@ -223,9 +208,6 @@ class UpdateProductGroupTest extends Unit
         $this->tester->assertTouchActive(ProductGroupConfig::RESOURCE_TYPE_PRODUCT_ABSTRACT_GROUPS, $productAbstractTransfer4->getIdProductAbstract(), 'Product #4 should have been touched as active.');
     }
 
-    /**
-     * @return void
-     */
     public function testUpdateProductGroupMultipleTimesIsIdempotent(): void
     {
         // Arrange

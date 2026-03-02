@@ -26,11 +26,6 @@ class ProductStorageReader implements ProductStorageReaderInterface
      */
     protected $productClient;
 
-    /**
-     * @param \Spryker\Client\ProductGroup\Storage\ProductAbstractGroupStorageReaderInterface $productAbstractGroupStorageReader
-     * @param \Spryker\Client\ProductGroup\Storage\ProductGroupStorageReaderInterface $productGroupStorageReader
-     * @param \Spryker\Client\ProductGroup\Dependency\Client\ProductGroupToProductInterface $productClient
-     */
     public function __construct(
         ProductAbstractGroupStorageReaderInterface $productAbstractGroupStorageReader,
         ProductGroupStorageReaderInterface $productGroupStorageReader,

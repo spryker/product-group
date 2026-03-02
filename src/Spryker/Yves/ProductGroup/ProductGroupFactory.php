@@ -23,9 +23,6 @@ class ProductGroupFactory extends AbstractFactory
         return new ProductGroupTwigExtension($this->getClient(), $this->getLocale());
     }
 
-    /**
-     * @return string
-     */
     protected function getLocale(): string
     {
         return $this->getProvidedDependency(ProductGroupDependencyProvider::SERVICE_LOCALE);

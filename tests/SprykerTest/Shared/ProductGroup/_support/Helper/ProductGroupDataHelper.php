@@ -19,11 +19,6 @@ class ProductGroupDataHelper extends Module
     use DataCleanupHelperTrait;
     use LocatorHelperTrait;
 
-    /**
-     * @param array $productGroupOverride
-     *
-     * @return \Generated\Shared\Transfer\ProductGroupTransfer
-     */
     public function haveProductGroup(array $productGroupOverride = []): ProductGroupTransfer
     {
         $productGroupFacade = $this->getProductGroupFacade();
@@ -46,11 +41,6 @@ class ProductGroupDataHelper extends Module
         return $productGroupTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductGroupTransfer $productGroupTransfer
-     *
-     * @return void
-     */
     private function cleanupProductGroup(ProductGroupTransfer $productGroupTransfer): void
     {
         $this->debug(sprintf('Deleting Product Group: %d', $productGroupTransfer->getIdProductGroup()));
@@ -58,9 +48,6 @@ class ProductGroupDataHelper extends Module
         $this->getProductGroupFacade()->deleteProductGroup($productGroupTransfer);
     }
 
-    /**
-     * @return \Spryker\Zed\ProductGroup\Business\ProductGroupFacadeInterface
-     */
     protected function getProductGroupFacade(): ProductGroupFacadeInterface
     {
         return $this->getLocator()->productGroup()->facade();

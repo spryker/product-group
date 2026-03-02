@@ -21,9 +21,6 @@ class ProductGroupCreator implements ProductGroupCreatorInterface
      */
     protected $productGroupTouch;
 
-    /**
-     * @param \Spryker\Zed\ProductGroup\Business\Model\ProductGroupTouchInterface $productGroupTouch
-     */
     public function __construct(ProductGroupTouchInterface $productGroupTouch)
     {
         $this->productGroupTouch = $productGroupTouch;
